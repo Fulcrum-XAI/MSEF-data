@@ -1,11 +1,13 @@
-# CCAMC Fine-Grained Script Corpus
+# CCAMC Fine-Grained Source Corpus
 
-Data-only release associated with *Tracing the Evolution of Oracle Bone Characters Across Three Millennia*. This repository publishes the dataset and its documentation; model source code is not included.
+Data-only release associated with *Tracing the Evolution of Oracle Bone Characters Across Three Millennia*. This repository publishes source-corpus records and documentation; model source code is not included.
 
 ## Download
 
-- [Complete corpus archive](https://github.com/Fulcrum-XAI/msef-data/releases/latest/download/ccamc-fine-grained-v1.0.tar.gz) (includes occurrence records, linked source images, and cached source pages)
-- Machine-readable metadata is in [`metadata/`](metadata/), including the canonical JSONL and CSV occurrence tables and the model-input index.
-- [Dataset card](DATA_RIGHTS.md) describes source, counting units, and rights.
+- [CCAMC source corpus archive](https://github.com/Fulcrum-XAI/MSEF-data/releases/latest/download/ccamc-fine-grained-v1.0.tar.gz)
+- Machine-readable occurrence tables and summary statistics are in [`metadata/`](metadata/).
+- [Dataset source and rights](DATA_RIGHTS.md) describes provenance and the status of third-party material.
 
-The release contains 158,620 source occurrences across six source categories. A row denotes an occurrence; rows may share a character, source object, image URL, or local image. Original source labels and source attribution are preserved.
+The archive contains 158,620 source occurrences across six CCAMC script categories, with cached source pages and linked source images. Occurrences are distinct from unique characters, artifacts, and images. Original source labels and provenance are retained.
+
+This package is the CCAMC source-corpus component. It does not contain the derived FGCCES cross-era correspondences, survival annotations, engineered feature files, or character-disjoint train/validation/test splits used in the paper’s experiments. The source corpus alone must not be treated as those derived labels.
